@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maschiare Gaming Hub</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
+        defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR SUPERIOR -->
+    <nav class="navbar navbar-expand-lg py-3 px-2" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/LOGO_MGH.png" alt="Maschiare Gaming Hub" height="85">
+            </a>
+            <div id="navbar-items">
+                <div></div>
+                <form class="d-flex" id="search-form">
+                    <i class="bi bi-search primary-color"></i>
+                    <input class="form-control me-2" type="search" placeholder="Busque periféricos, jogos, hardware..."
+                        aria-label="Search">
+                    <button class="btn secondary-bg-color" type="submit"
+                        style="color:#000;clip-path:none;border-radius:0;">Buscar</button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person"></i></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-heart"></i></a>
+                        <span>5</span>
+                    </li>
+                    <li class="nav-item" id="bag-item">
+                        <a class="nav-link" href="#"><i class="bi bi-bag"></i> <b>R$ 5680,12</b></a>
+                        <span>8</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAVBAR INFERIOR -->
+    <nav class="navbar navbar-expand-lg p-2" id="bottom-navbar-container">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar"
+                aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list" style="color:var(--neon-orange)"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                <li class="nav-item sobre"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item sobre"><a class="nav-link" href="#">Hardware</a></li>
+                <li class="nav-item sobre"><a class="nav-link" href="#">Periféricos</a></li>
+                <li class="nav-item sobre"><a class="nav-link" href="#">Jogos</a></li>
+                <li class="nav-item sobre"><a class="nav-link" href="#">Cadeiras Gamer</a></li>
+                <li class="nav-item sobre"><a class="nav-link" href="#">Promoções</a></li>
+                <li class="nav-item sobre"><a class="nav-link" href="#">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL - 5 SLIDES -->
+    <div class="container-fluid p-0" id="banners-container">
+        <div id="slider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel_gpu_cpu_MGH.png" class="d-block w-100 img-fluid" alt="">
+                    <div class="carousel-caption destaque">
+                        <h5>Novos Lançamentos</h5>
+                        <p>As melhores GPUs e CPUs do mercado com entrega rápida.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/setup_dos_sonhos_MGH.png" class="d-block w-100 img-fluid" alt="">
+                    <div class="carousel-caption destaque">
+                        <h5>Monte seu Setup</h5>
+                        <p>O setup dos seus sonhos com os melhores preços.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/perifericos_top_MGH.png" class="d-block w-100 img-fluid" alt="">
+                    <div class="carousel-caption destaque">
+                        <h5>Periféricos Top</h5>
+                        <p>Teclados, mouses e headsets para dominar qualquer game.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/cadeiras_gamer_MGH.png" class="d-block w-100 img-fluid" alt="">
+                    <div class="carousel-caption destaque">
+                        <h5>Cadeiras Gamer</h5>
+                        <p>Conforto e estilo para longas sessões de gameplay.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/promocoes_epicas_MGH.png" class="d-block w-100 img-fluid" alt=""
+                        style="filter:hue-rotate(25deg) saturate(1.3)">
+                    <div class="carousel-caption destaque">
+                        <h5>Promoções Épicas</h5>
+                        <p>Descontos de até 50% em produtos selecionados. Não perca!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- MINI BANNERS -->
+    <div class="container" id="mini-banners">
+        <div class="row justify-content-around">
+            <div class="col-12 dark-bg-color" id="mini-banner-1">
+                <h2>Nova Linha</h2>
+                <img src="img/nova_linha_MGH.png" alt="">
+                <a href="#">Ver Agora</a>
+            </div>
+            <div class="col-12" id="mini-banner-2" style="background-color: var(--navy-light);">
+                <h2>Promoções</h2>
+                <img src="img/promocoes_MGH.png" alt="">
+                <a href="#">Ver Agora</a>
+            </div>
+            <div class="col-12" id="mini-banner-3"
+                style="background: linear-gradient(135deg, var(--navy-light), var(--card-bg));">
+                <h2>Edição<br>Limitada</h2>
+                <a href="#">Ver Agora</a>
+                <img src="img/edicao_limitadav2_MGH.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- BEST SELLERS -->
+    <div class="container" id="best-sellers">
+        <h2 class="title">🏆 Mais Vendidos</h2>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card destaque">
+                    <span class="card-badge">-15%</span>
+                    <img src="img/RTX4080_MGH.png" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <p class="card-category">GPU</p>
+                        <h5 class="card-title">RTX 4080 Super</h5>
+                        <p class="card-text">
+                            <span class="original-price">R$7.999,97</span>
+                            <span class="discount-price">R$6.799,97</span>
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card primary-bg-color">
+                    <span class="card-badge">-20%</span>
+                    <img src="img/AOC_MGH.png" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <p class="card-category">Monitor</p>
+                        <h5 class="card-title">AOC 240Hz 27"</h5>
+                        <p class="card-text">
+                            <span class="original-price">R$2.999,97</span>
+                            <span class="discount-price">R$2.399,97</span>
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card destaque">
+                    <span class="card-badge">-10%</span>
+                    <img src="img/HYPERX_MGH.png" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <p class="card-category">Teclado</p>
+                        <h5 class="card-title">Razer HyperX TKL</h5>
+                        <p class="card-text">
+                            <span class="original-price">R$799,97</span>
+                            <span class="discount-price">R$719,97</span>
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card primary-bg-color">
+                    <span class="card-badge">-30%</span>
+                    <img src="img/SteelSeries_MGH.png" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <p class="card-category">Headset</p>
+                        <h5 class="card-title">SteelSeries Arctis 7</h5>
+                        <p class="card-text">
+                            <span class="original-price">R$1.299,97</span>
+                            <span class="discount-price">R$909,97</span>
+                        </p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BANNER DESTAQUE -->
+    <div class="container-fluid" id="bottom-banner">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-md-8">
+                <p class="primary-color offer-subtitle">⚡ Desconto de até 75%</p>
+                <h2 class="light-color">RTX 5090</h2>
+                <p class="secondary-color">A placa de vídeo mais poderosa do mercado. Domine qualquer jogo em 4K
+                    ultrawide.</p>
+                <a href="#" class="btn btn-primary">Comprar agora</a>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="img/RTX5090_MGH.png" alt="Produto destaque">
+            </div>
+        </div>
+    </div>
+
+    <!-- NOVIDADES -->
+    <div class="container" id="new-products">
+        <h2 class="title">🎮 Novidades</h2>
+        <div class="row">
+            <div class="col-12 col-md-3 d-none d-md-flex" id="new-products-banner">
+                <p class="secondary-color" style="font-size:.8rem;letter-spacing:2px;text-transform:uppercase;">Os
+                    melhores</p>
+                <h3>Produtos</h3>
+                <p class="primary-color" style="font-size:.8rem;">pelos melhores preços</p>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row">
+
+                    <!-- CARD G PRO X -->
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color" id="gprox-card">
+                            <img src="img/GPROX_MGH.png" class="img-fluid" alt="Produto">
+                            <div class="card-body">
+                                <p class="card-category">Headset</p>
+                                <h5 class="card-title">Logitech G Pro X</h5>
+                                <p class="card-text primary-color">R$499,97</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="img/RYZEN9000_MGH.png" class="img-fluid" alt="Produto">
+                            <div class="card-body">
+                                <p class="card-category">CPU</p>
+                                <h5 class="card-title">Ryzen 9 9900X</h5>
+                                <p class="card-text primary-color">R$2.899,97</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="img/SSD990_MGH.png" class="img-fluid" alt="Produto">
+                            <div class="card-body">
+                                <p class="card-category">SSD</p>
+                                <h5 class="card-title">Samsung 990 Pro 2TB</h5>
+                                <p class="card-text primary-color">R$849,97</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="img/DXRACER_MGH.png" class="img-fluid" alt="Produto">
+                            <div class="card-body">
+                                <p class="card-category">Cadeira</p>
+                                <h5 class="card-title">DXRacer Formula</h5>
+                                <p class="card-text primary-color">R$1.799,97</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="img/XboxSERIES_MGH.png" class="img-fluid" alt="Produto">
+                            <div class="card-body">
+                                <p class="card-category">Controle</p>
+                                <h5 class="card-title">Xbox Elite Series 2</h5>
+                                <p class="card-text primary-color">R$1.199,97</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="img/WebCam_MGH.png" class="img-fluid" alt="Produto">
+                            <div class="card-body">
+                                <p class="card-category">Webcam</p>
+                                <h5 class="card-title">Logitech Brio 4K</h5>
+                                <p class="card-text primary-color">R$1.099,97</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALERIA -->
+    <div class="container-fluid" id="gallery">
+        <div class="row">
+            <div class="col-6 col-md-2 image-container" id="insta1"></div>
+            <div class="col-6 col-md-2 image-container" id="insta2"></div>
+            <div class="col-6 col-md-2 image-container" id="insta3"></div>
+            <div class="col-6 col-md-2 image-container" id="insta4"></div>
+            <div class="col-6 col-md-2 image-container" id="insta5"></div>
+            <div class="col-6 col-md-2 image-container" id="insta6"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container-fluid" id="footer-links-container">
+            <div class="row">
+                <div class="col-12 col-md-4 footer-column">
+                    <h3>Navegação</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Home</a></li>
+                        <li class="mb-2"><a href="#">Categorias</a></li>
+                        <li class="mb-2"><a href="#">Promoções</a></li>
+                        <li class="mb-2"><a href="#">Blog Gamer</a></li>
+                        <li class="mb-2"><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 footer-column" id="footer-center">
+                    <h3>Maschiare Gaming Hub</h3>
+                    <p class="secondary-color">Dúvidas? Fale com a gente!</p>
+                    <p class="store-phone"><i class="bi bi-telephone"></i> (11) 99999-9999</p>
+                </div>
+                <div class="col-12 col-md-4 footer-column">
+                    <h3>Informações</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Política de Privacidade</a></li>
+                        <li class="mb-2"><a href="#">Política de Entregas</a></li>
+                        <li class="mb-2"><a href="#">Rastreie seu pedido</a></li>
+                        <li class="mb-2"><a href="#">Trocas e Devoluções</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="newsletter-container">
+            <div class="col-12">
+                <div class="row">
+                    <p class="secondary-color">Fique por dentro das novidades — inscreva-se na Newsletter:</p>
+                    <form class="d-flex" id="news-form">
+                        <i class="bi bi-envelope"></i>
+                        <input class="form-control me-2" placeholder="Insira seu e-mail">
+                        <button class="btn secondary-bg-color" type="submit"
+                            style="clip-path:none;border-radius:0;color:#000;">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12" id="social-container">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-twitch"></i>
+                <i class="bi bi-discord"></i>
+            </div>
+        </div>
+        <div class="container" id="copy-container">
+            <p>© 2026 <span class="primary-color" style="font-family:'Orbitron',sans-serif;font-weight:700;">Maschiare
+                    Gaming Hub</span> — Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
